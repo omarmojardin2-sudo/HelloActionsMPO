@@ -1,11 +1,15 @@
 name: HelloMPO
 
-on: [push]
+on: [push] 
+
 jobs:
   saludo:
     runs-on: ubuntu-latest
-    steps:
-    - name: HelloMPO
-      run: echo "hola,mundo,desde MPO"
-    
+    steps: 
+      - name: Primer escenario
+        run: echo "Hola, mundo, desde mgd"
+      - name: Segundo escenario
+        run: 
+          echo "Step 2. Segundo saludo"
+          echo "Step 3. Tercer saludo"
   
